@@ -1,6 +1,6 @@
 ﻿namespace StacksAndQueues.Backend;
 
-public class StackUsingArray<T>
+public class StackUsingArray<T> : IStack<T>
 {
     private T[] _stack;
     private int _top;

@@ -1,12 +1,10 @@
-﻿using StacksAndQueues.Backend;
-
-var stack = new StackUsingArray<string>(5);
+﻿var stack = new Stack<string>();
 var option = string.Empty;
 
 do
 {
     option = Menu();
-    switch(option)
+    switch (option)
     {
         case "1":
             Console.Write("Digite el elemento a apilar: ");
@@ -49,7 +47,7 @@ string Menu()
 {
     Console.WriteLine("1. Apilar");
     Console.WriteLine("2. Desapilar");
-    Console.WriteLine("3. Ver tope"); 
+    Console.WriteLine("3. Ver tope");
     Console.WriteLine("0. Salir");
     Console.Write("Digite su opción: ");
     return Console.ReadLine() ?? string.Empty;
